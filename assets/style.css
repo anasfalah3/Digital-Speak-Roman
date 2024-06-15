@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap");
+
+:root {
+  --brand-color: #ff0000;
+  --white: #ffffff;
+  --black: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  padding: 10px 50px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px 60px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-brand {
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+.btn-white {
+  color: var(--brand-color);
+  background-color: var(--white);
+}
+.container {
+  /* width: 100vw; */
+  overflow: hidden;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  position: relative;
+}
+.hero .right {
+  width: 50%;
+  padding-right: 10px;
+}
+.hero .left {
+  width: 50%;
+  background: var(--brand-color);
+  position: relative;
+}
+.left .logo {
+  margin-top: 36px;
+  margin-left: 30px;
+  width: 36px;
+}
+.left section {
+  width: 510px;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 30px;
+  position: relative;
+  z-index: 3;
+}
+.left h1 {
+  color: var(--white);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: justify;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-bottom: 40px;
+  z-index: 4;
+  position: relative;
+}
+.left .circle {
+  position: absolute;
+  top: -5rem;
+  right: 21rem;
+  width: 280px;
+  height: 280px;
+  background-color: darkred;
+  opacity: 0.2;
+  clip-path: circle(50% at 50% 50%);
+  z-index: 2;
+}
+.right section {
+  width: 300px;
+  margin: auto;
+  margin-top: 120px;
+  margin-right: 50px;
+  float: right;
+}
+.right section p {
+  margin-top: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  text-align: justify;
+  color: var(--black);
+}
+.right section .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 60px;
+  text-align: justify;
+  text-transform: uppercase;
+}
+.right section .btn {
+  padding: 20px 145px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 13px solid var(--white);
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+.middle-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.hero-img {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
+
+.vectore1 {
+  position: absolute;
+  z-index: 3;
+  width: 100px;
+  right: -30px;
+  top: 30px;
+}
+.vectore2 {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  bottom: 20px;
+}
+.logos {
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: var(--white);
+}
+.logos-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.logos-slider img {
+  height: 50px;
+  margin: 0 40px;
+}
+.services {
+  position: relative;
+  padding: 80px 100px;
+}
+.services h1 {
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 100px;
+}
+.services .shape {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  width: 80px;
+}
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  width: 291px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content {
+  width: 100%;
+  height: 360px;
+  padding: 80px 20px;
+  background: #f5f5f5;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  position: relative;
+  z-index: 3;
+}
+
+.content p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+  text-align: center;
+  color: var(--black);
+}
+
+.content img {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--brand-color);
+}
+
+.card span {
+  position: absolute;
+  top: 40%;
+  left: -22%;
+  font-weight: 700;
+  font-size: 206px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  z-index: 2;
+}
+.about {
+  padding: 80px 0 0 0;
+  overflow: hidden;
+}
+.about h1 {
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 50px;
+}
+.about-wrapper {
+  position: relative;
+  background-color: var(--black);
+  width: 100%;
+  height: 700px;
+  padding: 50px 57px 20px 0;
+}
+.about-wrapper .about-img {
+  position: absolute;
+  top: -25%;
+  left: 0.5%;
+  width: 472px;
+}
+.about-wrapper .shape {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  width: 80px;
+}
+.about-content {
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+.about-content .about-content-title {
+  font-family: "Six Caps";
+  font-weight: 400;
+  font-size: 328px;
+  line-height: 255px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-left: -10px;
+}
+.about-content .about-content-title span {
+  color: var(--brand-color);
+}
+
+.about-content .about-content-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+  text-align: justify;
+  color: var(--white);
+  margin-top: 30px;
+}
+.about-content .about-content-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 50px auto;
+}
+.about-content .about-content-social span {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.portfolio {
+  position: relative;
+  padding: 80px;
+  background-color: var(--brand-color);
+}
+.portfolio h1 {
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 100px;
+}
+.portfolio .shape {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 350px;
+  z-index: 1;
+}
+.portfolio .btn,
+.features-content .btn {
+  margin: auto;
+}
+.videos-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.video-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  z-index: 3;
+}
+.video-card img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.video-title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white);
+}
+.video-description {
+  font-weight: 200;
+  font-size: 21px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white);
+}
+.features {
+  padding: 80px;
+  color: var(--black);
+}
+.features h1 {
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 100px;
+}
+.features-container {
+  display: flex;
+  justify-content: space-between;
+}
+.features-content {
+  width: 50%;
+}
+.features-image {
+  position: relative;
+  width: 50%;
+  padding: 0;
+}
+.features-image img {
+  width: 98%;
+}
+.features-image p {
+  position: absolute;
+  width: 120px;
+  left: 65%;
+  bottom: 6%;
+  font-family: "Six Caps";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.features-image p span {
+  letter-spacing: -0em;
+  color: var(--brand-color);
+}
+.features-content .features-content-title {
+  font-family: "Six Caps";
+  font-weight: 400;
+  font-size: 71px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  margin-bottom: 20px;
+}
+.features-content .features-content-description {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 34px;
+  text-align: justify;
+  color: var(--black);
+  margin-bottom: 25px;
+}
+.single-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.single-feature img {
+  margin-right: 10px;
+  border: none;
+  width: 70px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--brand-color);
+}
+.single-feature p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 34px;
+  text-align: justify;
+}
+.footer {
+  position: relative;
+  padding: 80px;
+  background-image: url(./images/background.png);
+  background-size: cover;
+  height: 500px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 44px;
+  z-index: 0;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.856);
+  z-index: -1;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content p {
+  width: 600px;
+  text-align: justify;
+}
+.footer-content img {
+  height: 80px;
+  margin-left: 15%;
+}
+.footer .copyright {
+  position: relative;
+  top: 50%;
+  width: fit-content;
+  margin: auto;
+}
+
+/* Responsive Design */
+@media (min-width: 1440px) {
+  .left section {
+    width: 1000px;
+  }
+  .left h1 {
+    font-size: 80px;
+    line-height: unset;
+  }
+  .btn {
+    font-size: 70px;
+  }
+  .left .circle {
+    right: 41rem;
+    width: 480px;
+    height: 480px;
+  }
+  .vectore1 {
+    width: 160px;
+    right: -90px;
+    top: 60px;
+  }
+
+  .vectore2 {
+    width: 90px;
+    bottom: 180px;
+    left: -120px;
+  }
+  .hero-img {
+    position: absolute;
+    width: 150%;
+    top: 10%;
+    left: -30%;
+  }
+  .right section {
+    width: 600px;
+  }
+  .right section img {
+    width: 100%;
+  }
+  .right section p {
+    font-size: 49px;
+    line-height: unset;
+  }
+  .right section .numbers {
+    font-size: 46px;
+  }
+
+  .right section .btn {
+    padding: 20px 245px;
+  }
+  .triangle {
+    border-left: 43px solid var(--white);
+    border-top: 43px solid transparent;
+    border-bottom: 43px solid transparent;
+  }
+  .services-cards {
+    margin: 0 10%;
+  }
+  .about-wrapper {
+    height: 60rem;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content .about-content-title {
+    font-size: 454px;
+    line-height: 345px;
+  }
+  .about-content .about-content-description {
+    width: inherit;
+    font-size: 31px;
+    line-height: 44px;
+  }
+  .social-links {
+    display: flex;
+  }
+  .social-links img {
+    width: 50px;
+  }
+  .about-wrapper .about-img {
+    position: absolute;
+    top: -15%;
+    left: 20.8%;
+    width: 23%;
+  }
+}
+/* 
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero .left, .hero .right {
+    width: 100%;
+  }
+  .left section, .right section {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .left h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .right section p, .right section .numbers, .right section .btn {
+    text-align: center;
+  }
+  .right section .btn {
+    padding: 15px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left section {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .left h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .right section {
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  .right section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .right section .numbers {
+    font-size: 20px;
+  }
+  .right section .btn {
+    padding: 10px 50px;
+  }
+  .middle-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .right section p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .right section .numbers {
+    font-size: 18px;
+  }
+  .right section .btn {
+    padding: 10px 30px;
+  }
+  .middle-image {
+    max-width: 250px;
+  }
+  .vectore1 {
+    width: 60px;
+    right: 0;
+  }
+  .vectore2 {
+    width: 30px;
+  }
+} */
