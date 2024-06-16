@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var fadeSections = $(".services,.about, .portfolio, .features, .footer");
+  var fadeSections = $(".services,.about, .portfolio, .features");
 
   fadeSections.css("opacity", 0);
 
