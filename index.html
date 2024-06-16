@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rome Maquette</title>
+    <title>Rome Cauver</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--  FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap"
-      rel="stylesheet" />
     <!--  CSS -->
     <link rel="stylesheet" href="./assets/style.css" />
     <!-- jQuery  -->
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
   </head>
   <body>
+    <div class="loader">
+      <div class="loader-content">
+        <img src="./assets/images/logo.png" alt="Loading..." />
+      </div>
+    </div>
     <div class="container">
       <section class="hero">
         <div class="left">
@@ -51,11 +53,18 @@
       </section>
       <section class="logos">
         <div class="logos-slider">
-          <img src="./assets/logos/poctime.svg" alt="" />
-          <img src="./assets/logos/treking.svg" alt="" />
-          <img src="./assets/logos/hdk.svg" alt="" />
-          <img src="./assets/logos/laces.svg" alt="" />
-          <img src="./assets/logos/kraken.svg" alt="" />
+          <img class="logo" src="./assets/logos/poctime.svg" alt="" />
+          <img class="logo" src="./assets/logos/treking.svg" alt="" />
+          <img class="logo" src="./assets/logos/hdk.svg" alt="" />
+          <img class="logo" src="./assets/logos/laces.svg" alt="" />
+          <img class="logo" src="./assets/logos/kraken.svg" alt="" />
+        </div>
+        <div class="logos-slider">
+          <img class="logo" src="./assets/logos/poctime.svg" alt="" />
+          <img class="logo" src="./assets/logos/treking.svg" alt="" />
+          <img class="logo" src="./assets/logos/hdk.svg" alt="" />
+          <img class="logo" src="./assets/logos/laces.svg" alt="" />
+          <img class="logo" src="./assets/logos/kraken.svg" alt="" />
         </div>
       </section>
       <section class="services">
@@ -63,7 +72,9 @@
         <div class="services-cards">
           <div class="card">
             <div class="content">
-              <div class="icon"><img src="./assets/icons/icon1.svg" alt="" /></div>
+              <div class="icon">
+                <img src="./assets/icons/icon1.svg" alt="" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +84,9 @@
           </div>
           <div class="card">
             <div class="content">
-              <div class="icon"><img src="./assets/icons/icon2.svg" alt="" /></div>
+              <div class="icon">
+                <img src="./assets/icons/icon2.svg" alt="" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -83,7 +96,9 @@
           </div>
           <div class="card">
             <div class="content">
-              <div class="icon"><img src="./assets/icons/icon3.svg" alt="" /></div>
+              <div class="icon">
+                <img src="./assets/icons/icon3.svg" alt="" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -91,9 +106,8 @@
             </div>
             <span>3</span>
           </div>
-          
-          </div>
-        <img  class="shape" src="./assets/images/vectore1.png" alt="" />
+        </div>
+        <img class="shape" src="./assets/images/vectore1.png" alt="" />
       </section>
       <section class="about">
         <h1>Qui est roman cauver</h1>
@@ -114,15 +128,15 @@
             </p>
             <div class="about-content-social">
               <div class="social-links">
-                <img src="./assets/icons/instagram.svg" alt="">
-                <img src="./assets/icons/youtube.svg" alt="">
-                <img src="./assets/icons/twitter.svg" alt="">
-                <img src="./assets/icons/facebook.svg" alt="">
+                <img src="./assets/icons/instagram.svg" alt="" />
+                <img src="./assets/icons/youtube.svg" alt="" />
+                <img src="./assets/icons/twitter.svg" alt="" />
+                <img src="./assets/icons/facebook.svg" alt="" />
               </div>
               <span>Roman Cauver</span>
             </div>
           </div>
-          <img  class="shape" src="./assets/images/vectore1.png" alt="" />
+          <img class="shape" src="./assets/images/vectore1.png" alt="" />
         </div>
       </section>
       <section class="portfolio">
@@ -172,8 +186,8 @@
             </h2>
             <p class="features-content-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam,
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
             </p>
             <div class="single-feature">
               <img src="./assets/icons/icon1.svg" alt="" />
@@ -207,7 +221,7 @@
           </div>
           <div class="features-image">
             <img src="./assets/images/pic4.png" alt="" />
-              <p>Roman <Span>Cauver</Span></p>
+            <p>Roman <span>Cauver</span></p>
           </div>
         </div>
       </section>
@@ -226,6 +240,7 @@
         </p>
       </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
